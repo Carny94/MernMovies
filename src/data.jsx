@@ -1,4 +1,7 @@
-export const movies = [
+
+
+
+ const movies = [
     {
       "posterPath": "https://image.tmdb.org/t/p/w500/8UlWHLMpgZm9bx6QYh0NFoq67TZ.jpg",
       "releaseDate": "2020-12-16",
@@ -215,3 +218,6 @@ export const movies = [
       ]
     }
   ];
+
+
+

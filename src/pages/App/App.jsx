@@ -6,13 +6,13 @@ import MovieListPage from '../MovieListPage/MovieListPage';
 import './App.css';
 import ActorListPage from '../ActorListPage/ActorListPage';
 import NavBar from '../../components/NavBar/NavBar';
-import { movies } from '../../data';
+import  movies  from '../../data';
 
 
 export default function App() {
 
   //iniitalze userstate to empty username
-  const [user, setUser] = useState(null);
+  const [user, setUser] = useState({});
 
   return (
     <main className="App">
@@ -34,7 +34,7 @@ export default function App() {
     </main>
   );
 
-  //function to update users username 
+  
 
   
 }

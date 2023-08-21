@@ -1,4 +1,6 @@
 
+
+
 export default function MovieCard() {
 
     const MovieCard = ({ movie }) => (
