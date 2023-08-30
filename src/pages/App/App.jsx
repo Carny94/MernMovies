@@ -6,7 +6,7 @@ import MovieListPage from '../MovieListPage/MovieListPage';
 import './App.css';
 import ActorListPage from '../ActorListPage/ActorListPage';
 import NavBar from '../../components/NavBar/NavBar';
-import  movies  from '../../data';
+import { movies } from '../../data';
 
 
 export default function App() {
@@ -20,9 +20,10 @@ export default function App() {
          <> 
         <NavBar />
         <Routes>
-          <Route path = "/movies/:movieName" element={<MovieDetailPage />} />
-          <Route path = "/" element={<MovieListPage />} />
-          <Route path = "/actors" element={<ActorListPage />} />
+          <Route path = "/movies/:movieName" element={<MovieDetailPage movies={movies}/>} />
+          <Route path = "/" element={<MovieListPage movies={movies}/>} />
+          <Route path = "/actors" element={<ActorListPage movies={movies}/>} />
+          <Route path="/movies/:movieName" element={<MovieDetailPage movies={movies} />} />
           
          </Routes>
          </>
